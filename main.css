@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  html, body{
+    height:100%;
+  }
+  
+  
+  #clock{
+    text-align:center;  /*a tartalom horizontálisan középre rendezve jelenjen meg*/
+    position:relative;  /*a tartalom máshol jelenjen meg, mint az alapértelmezett megjelenés (position:static)*/
+    top:50%;  /*a tartalom az oldal tetejétől számított 50%-nál jelenjen meg, tehát (minden) képernyő felénél*/
+    font-family: 'Yellowtail', cursive;
+    font-size:4rem;  /*4*16px - gyökér elem HTML alapértelmezett méretei 16px*/
+    margin-top:-32px;  /*a betűméert felével csúsztattam felfelé az órát, így pont a képernyő közepén van + (*{ css reset })*/
+    transform: scale(.3);
+    transition: transform 250ms, opacity 400ms;
+  }
+  
+  #clock:hover{
+    transform: scale(1.2);
+  }
+  
+  div:hover{
+    background-color:lightgreen;
+  }
